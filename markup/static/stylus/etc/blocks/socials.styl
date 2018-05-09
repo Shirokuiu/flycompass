@@ -1,0 +1,48 @@
+.socials
+  &--footer
+    .socials__items
+      &--fb,
+      &--tw,
+      &--inst
+        .facebook,
+        .twitter,
+        .instagram
+          fill grayLowLight
+
+.socials__items
+  margin-right 15px
+  &:last-child
+    margin-right 0
+  &--fb
+    width 11px
+    height 30px
+    .facebook
+      width 8px
+      height 30px
+      
+      fill white
+  &--tw
+    width 18px
+    height 30px
+    .twitter
+      width 18px
+      height 30px
+      
+      fill white
+  &--inst
+    width 17px
+    height 30px
+    .instagram
+      width 17px
+      height 30px
+      
+      fill white
+  &--fb,
+  &--tw,
+  &--inst
+    .facebook,
+    .twitter,
+    .instagram
+      transition 0.2s ease
+      &:hover
+        fill blueLight
