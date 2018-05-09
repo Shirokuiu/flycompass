@@ -9,14 +9,170 @@ html(class="no-js", lang="ru")
     .wrapper
       .content
         header.page-header
+          .page-header__row-top
+            .container.row
+              .logo.b--w180
+                img.logo__img(src="%=static=%" alt="logo")
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="#") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Services
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") About
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Contact us
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Blog
+                  li.main-nav__items
+                .search
+                  button.search__button.button(type="button")
+                    span.search__icon
+                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+              .socials.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+          .slider.owl-carousel.owl-theme
+            .slider__slide
+              img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  h2.text.text--white50.text--fw200.m--b5 Want to Grow Your Business?
+                  h3.text.text--white50.text--fw600.m--b25 We can assist You in This!
+                  p.text.text--white16.text--fw300.m--b40 Our skilled team of experts will provide You with top business plans!
+                  .b--w230
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more about us
+            .slider__slide
+              img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  h2.text.text--white50.text--fw200.m--b5 Strategic, Adaptable and
+                  h3.text.text--white50.text--fw600.m--b25 Tenacious at What We Do!
+                  p.text.text--white16.text--fw300.m--b40 Be sure that Your business will keep being profitable at any time!
+                  .b--w230
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more about us
           
-        main.page-content
-          
+        main.page-content.page-content--home
+          .home
+            
+            .home__features
+              .container
+                .home__features-row-top.row.row--jc-sb
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__deal-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'deal', className: 'deal'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 International Consultancy
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We provide international consultancy services to companies worldwide
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__experience-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'experience', className: 'experience'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Experience
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our qualified consultants can help your business grow
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__business-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'business', className: 'business'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Business Services
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We can review your business and advise on how to improve
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                
+                h2.text.text--blueLight14.text--fw600.text--center.text--uppercase.m--b15 Welcome!
+                h3.text.text--gray50.text--center.text--fw200 Start Improving
+                h3.text.text--gray50.text--center.text--fw600.m--b20 Your Business Today!
+                p.text.text--grayLowLight16.text--center.text--fw300.m--b60 From investment to strategic plans, we can assist you with everything to make your business flourish!
+                
+                .row.row--jc-sb
+                  .b--w355
+                    span.home__light-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'light', className: 'light'})
+                    h2.text.text--gray16.text--fw800.m--b10 Financial audit of your business
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 We can review your business and advise on how you can improve profit and lower costs
+                  .b--w355
+                    span.home__like-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                    h2.text.text--gray16.text--fw800.m--b10 Unique Strategic Plans at Work
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 Our staff performance measures ensure we can monitor your staff's performance to improve your companies profit
+                  .b--w355
+                    span.home__mechanism-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'mechanism', className: 'mechanism'})
+                    h2.text.text--gray16.text--fw800.m--b10 Excellent Quality Ensured
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 Over 500 clients are satisfied with the services we provide. Our professional team has immaculate reputation in the business world.
+                    
+            .home__about.container.row
+              .b--w340.m--r50
+                h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 About
+                h2.text.text--gray50.text--fw200.m--b10 Start 
+                h2.text.text--gray50.text--fw600.m--b25 Improving
+                p.text.text--grayLowLight16.text--300.text--lh27 Our company started out in 2017, We have assisted our clients in creating business plans, strategic planning and have saved our clients thousands of pounds in improving sales and reducing costs
+              .b.grow.row.row--jc-sb
+                .home__about-cart.b--w370
+                  .home__about-cart-img-wrap.m--b20
+                    img.home__about-cart-img(src="%=static=%img/content/home-about-img1.jpg" alt="about-img")
+                  .home__about-cart-content.column.column--ai-c
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Professional Team at Work
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We value our clients and develop projects together. Our business consultants have tons of experience and expertise to provide the top quality service for You.
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                .home__about-cart.b--w370
+                  .home__about-cart-img-wrap.m--b20
+                    img.home__about-cart-img(src="%=static=%img/content/home-about-img2.jpg" alt="about-img")
+                  .home__about-cart-content.column.column--ai-c
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Bravely Facing the Future
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our team of analysts uses advanced technologies in order to achieve maximum results in business forecasts for the future of the world market.
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+            
+            .home__feedback.row.row--jc-c.row--ai-c
+              .container.column.column--ai-c
+                h2.text.text--white50.text--center.text--fw200.m--b5 Still Have Some Questions Left?
+                h3.text.text--white50.text--center.text--fw600.m--b15 Call us 
+                  a.text.text--white50(href="tel:") Tel: 01908 315501
+                p.text.text--white16.text--fw300.m--b40 Feel free to contact our support team to learn more about the services provided by us and multiple offers for Your business!
+                .home__feedback-button-wrap.b--w200
+                  a.home__feedback-button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Call us today
+                  span.home__feedback-tel-icon
+                    != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
+                    
+              .row
+                .home__feedback-cart.row.row--ai-c
+                  span.home__feedback-mark-icon
+                  .b
+                    h2.text Visit Our Company at
+                    p.text Address: 4578 Marmora Road, Glasgow
+                    
+                  
+              
       footer.page-footer
         .footer-content
+          .container
+            .logo.b--w180
+              img.logo__img(src="%=static=%" alt="logo")
+            .socials.socials--footer.row.row--ai-c.m--l30
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/owl.carousel.min.js')
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
     script(src='%=static=%js/main%=hash=%%=min=%.js')
