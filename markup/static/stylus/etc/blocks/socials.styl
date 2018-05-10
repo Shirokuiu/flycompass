@@ -1,5 +1,6 @@
 .socials
-  &--footer
+  &--footer,
+  &--blog
     .socials__items
       &--fb,
       &--tw,
@@ -8,6 +9,39 @@
         .twitter,
         .instagram
           fill grayLowLight
+  &--blog
+    .socials__items
+      display flex
+      justify-content center
+      align-items center
+      box-sizing border-box
+      width 49px
+      height 49px
+
+      border 2px solid #f6f6f6
+      border-radius 50%
+      &:hover
+        background-color #f6f6f6
+        .facebook,
+        .twitter,
+        .instagram
+          fill gray
+  &--blog-noBorder
+    .socials__items
+      width 20px
+      height 20px
+      
+      border none
+      .facebook,
+      .twitter,
+      .instagram
+        width 20px
+        height 20px
+      
+        fill #bebebf
+      &:hover
+        background-color transparent
+        
 
 .socials__items
   margin-right 15px

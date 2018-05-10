@@ -1,0 +1,172 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header
+          .page-header__row-top.page-header__row-top--inner#rowTop
+            .container.row
+              .logo
+                a.logo__text.text.text--fw700(href="index.html") Flycompass
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="index.html") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Services
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") About
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Contact us
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="blog.html") Blog
+                  li.main-nav__items
+                .search
+                  button.search__button.button(type="button")
+                    span.search__icon
+                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+              .socials.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+        main.page-content
+        
+          .home
+            a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
+              span.scroll-top-arrow
+          
+          .blog.m--b80
+            
+            .breadcrumbs.m--b80
+              .container.row.row--jc-sb.row--ai-c
+                h2.text.text--blueLight24.text--fw800.text--uppercase Blog
+                .row
+                  a.breadcrumbs__link.text.text--grayLowLight12.text--fw400.text--uppercase(href="index.html") Home
+                  p.breadcrumbs__slash.text.text--grayLowLight12.text--fw400.text--uppercase /
+                  a.breadcrumbs__link.breadcrumbs__link--active.text.text--grayLowLight12.text--fw400.text--uppercase Blog
+                  
+            .row.container
+              .b--w365.m--r20
+                .blog__search.m--b35
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 Search
+                  .blog__search-input-wrap
+                    input.blog__search-input.text--grayLowLight14.text--fw300(type="text" placeholder="Search...")
+                    button.blog__search-button
+                      span.search__icon.search__icon--search
+                        != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+                        
+                .blog__mail.m--b35
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 News letter sing up
+                  p.text.text--grayLowLight14.text--fw300.text--lh27.m--b10 Sign up for our newsletter mailing list and we’ll send you all the good stuff, daily!
+                  .blog__search-input-wrap.m--b40
+                    input.blog__search-input.text--grayLowLight14.text--fw300(type="email" placeholder="Enter your e-mail")
+                    button.blog__search-button
+                      span.home__feedback-mail-icon.home__feedback-mail-icon--blogMail
+                        != pugHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail'})
+                  .blog__border.m--b30
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 Follow us
+                  .socials.socials--blog.row.row--ai-c
+                    a.socials__items.socials__items--fb(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                    a.socials__items.socials__items--tw(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                    a.socials__items.socials__items--inst(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+                
+                .blog__border.m--b35
+                
+                .blog__calendar.m--b35
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 Calendar
+                  
+                  .blog__calendar-wrap
+                    
+                .blog__border.m--b35
+                
+                .blog__posts.m--b25
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 Recent posts
+                  .row
+                    .blog__post-img-wrap.b--w120.m--r20
+                      a.blog__post-img-link(href="#")
+                        img.blog__post-img(src="%=static=%img/content/blog-img1.jpg" alt="post")
+                    .b--fb220.grow
+                      a.blog__post-link.blog__post-link--block.text.text--grayLowLight12.text--fw400.text--uppercase.m--b5(href="#") December 19, 2017
+                      p.text.text.text--grayLowLight12.text--fw400.m--b5 by
+                        a.blog__post-link.blog__post-link--inline.text.text--blueLight12.text--fw400.text--uppercase.m--l5(href="#") Startabusiness01
+                      a.blog__post-link.text.text--gray16.text--fw700.text--lh27(href="#") We can improve your companies costs
+                      p.text.text--grayLowLight14.text--fw300.text--lh27.m--b5 We can assist in reviewing your business costs and help…
+                      a.blog__post-link.blog__post-link--inline.blog__post-link--block.text.text--blueLight12.text--fw400.text--uppercase.m--b10(href="#") People
+                      a.blog__post-button(href="#")
+                        span.blog__post-comment-icon
+                          != pugHelpers.Icon.call(locals, {iconName: 'comment', className: 'comment'})
+                        p.blog__post-butto-text.text.text--grayLowLight12.text--fw400.m--l5 0
+                        
+                .blog__border.m--b40
+                
+                .blog__archive
+                  h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20 Archive
+                  
+                  .blog__archive-select-wrap
+                    select.blog__archive-select
+                      option(value="1") Select Month
+                      option(value="2") December
+                    span.blog__archive-select-icon
+              
+              .b--fb765.grow.column.column--ai-c
+                .blog__posts.b--resize-w100
+                  .row.row--jc-sb.m--b30
+                    .b.column.column--ai-c.m--l-a.m--r50
+                      .row.m--b10
+                        a.blog__post-link.blog__post-link--block.text.text--grayLowLight12.text--fw400.text--uppercase.m--r5(href="#") December 19, 2017
+                        p.text.text.text--grayLowLight12.text--fw400.m--r5 by
+                          a.blog__post-link.blog__post-link--inline.text.text--blueLight12.text--fw400.text--uppercase.m--l5(href="#") Startabusiness01
+                        p.text.text.text--grayLowLight12.text--fw400 in
+                          a.blog__post-link.blog__post-link--inline.text.text--blueLight12.text--fw400.text--uppercase.m--l5(href="#") People
+                      a.blog__post-link.text.text--gray24.text--fw800.text--lh27.m--b15(href="#") We can improve your companies costs
+                      p.text.text--grayLowLight14.text--fw300.text--lh27.m--b5 We can assist in reviewing your business costs and help you improve profit
+
+                    a.blog__post-button(href="#")
+                      span.blog__post-comment-icon
+                        != pugHelpers.Icon.call(locals, {iconName: 'comment', className: 'comment'})
+                      p.blog__post-butto-text.text.text--grayLowLight12.text--fw400.m--l5 0
+                      
+                  .home.row.row--jc-c.m--b30
+                    .b--w170
+                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      
+                  .socials.socials--blog.socials--blog-noBorder.row.row--ai-c.row--jc-c
+                    a.socials__items.socials__items--fb(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                    a.socials__items.socials__items--tw(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                    a.socials__items.socials__items--inst(href="#")
+                      != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+ 
+      footer.page-footer
+        .footer-content
+          .container.row.row--jc-sb.row--ai-c
+            .logo
+                a.logo__text.text.text--fw700(href="index.html") Flycompass
+            .socials.socials--footer.row.row--ai-c
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
+    script(src='%=static=%js/separate-js/jquery-ui.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
