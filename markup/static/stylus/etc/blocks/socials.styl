@@ -4,10 +4,12 @@
     .socials__items
       &--fb,
       &--tw,
-      &--inst
+      &--inst,
+      &--g
         .facebook,
         .twitter,
-        .instagram
+        .instagram,
+        .googlePlus
           fill grayLowLight
   &--blog
     .socials__items
@@ -41,6 +43,23 @@
         fill #bebebf
       &:hover
         background-color transparent
+  &--about
+    .socials__items
+      &--fb,
+      &--tw,
+      &--inst,
+      &--g
+        .facebook,
+        .twitter,
+        .instagram,
+        .googlePlus
+          fill blueLowLight
+      &:hover
+        .facebook,
+        .twitter,
+        .instagram,
+        .googlePlus
+          fill blueLowLight
         
 
 .socials__items
@@ -71,12 +90,22 @@
       height 30px
       
       fill white
+  &--g
+    width 23px
+    height 18px
+    .googlePlus
+      width 23px
+      height 18px
+      
+      fill white
   &--fb,
   &--tw,
-  &--inst
+  &--inst,
+  &--g
     .facebook,
     .twitter,
-    .instagram
+    .instagram,
+    .googlePlus
       transition 0.2s ease
       &:hover
         fill blueLight
