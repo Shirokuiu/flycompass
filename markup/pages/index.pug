@@ -9,9 +9,9 @@ html(class="no-js", lang="ru")
     .wrapper
       .content
         header.page-header
-          .page-header__row-top#rowTop
+          .page-header__row-top.page-header__row-top--home#rowTop
             .container.row
-              .logo.b--w180
+              .logo
                 a.logo__text.text.text--fw700(href="index.html") Flycompass
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.row.m--l-a
@@ -24,7 +24,7 @@ html(class="no-js", lang="ru")
                   li.main-nav__items
                     a.main-nav__item.text.text--white14.text--fw600(href="#") Contact us
                   li.main-nav__items
-                    a.main-nav__item.text.text--white14.text--fw600(href="#") Blog
+                    a.main-nav__item.text.text--white14.text--fw600(href="blog.html") Blog
                   li.main-nav__items
                 .search
                   button.search__button.button(type="button")
@@ -178,9 +178,9 @@ html(class="no-js", lang="ru")
       footer.page-footer
         .footer-content
           .container.row.row--jc-sb.row--ai-c
-            .logo.b--w180
+            .logo
                 a.logo__text.text.text--fw700(href="index.html") Flycompass
-            .socials.socials--footer.row.row--ai-c.m--l30
+            .socials.socials--footer.row.row--ai-c
               a.socials__items.socials__items--fb(href="#")
                 != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
               a.socials__items.socials__items--tw(href="#")
