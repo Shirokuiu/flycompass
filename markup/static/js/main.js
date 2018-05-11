@@ -57,6 +57,7 @@ $(document).ready(function(){
     var searchItem = search.querySelector('.search__button');
     var searchForm = search.querySelector('.search__form');
     var searchExit = search.querySelector('.search__form-exit');
+    var searchInput = search.querySelector('.search__form-input');
     
     var closeEsc = function (e) {
       if (e.keyCode === 27) {
@@ -66,6 +67,7 @@ $(document).ready(function(){
     
     searchItem.addEventListener('click', function () {
       searchForm.classList.remove('search__form--hidden');
+      searchInput.focus();
       
       document.addEventListener('keydown', closeEsc);
     });
