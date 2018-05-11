@@ -13,3 +13,27 @@
     border-bottom 1px solid rgba(255, 255, 255, 0.3)
   &--inner
     background-color #19191a
+    
+@media(max-width 880px)
+  .page-header__row-top
+    &--home
+      position static
+      
+      background-color #19191a
+      
+      border-bottom none
+      
+@media(max-width 720px)
+  .page-header
+    padding-top 67px
+  
+  .page-header__row-top
+    position fixed
+    top 0
+    left 0
+    right 0
+    z-index 50
+    .container
+      position relative
+      
+      justify-content center

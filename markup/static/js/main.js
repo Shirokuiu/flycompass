@@ -10,7 +10,7 @@
         items: 1,
         slideTransition: 'ease',
         smartSpeed: 350,
-        autoplay: true,
+        autoplay: false,
         autoplayHoverPause:true
       });
     });
@@ -79,6 +79,18 @@ $(document).ready(function(){
     });
   }
 })();
+
+(function () {
+  var page = document.querySelector('.page');
+  var hamburger = document.querySelector('.hamburger');
+  var navList = page.querySelector('.main-nav__list');
+  
+  hamburger.addEventListener('click', function () {
+    this.classList.toggle('is-active');
+    navList.classList.toggle('main-nav__list--mobileHidden');
+    page.classList.toggle('page--navOpen');
+  });
+})()
 
 /*
     This file can be used as entry point for webpack!

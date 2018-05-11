@@ -8,15 +8,18 @@ html(class="no-js", lang="ru")
 
     .wrapper
       .content
-        header.page-header
+        header.page-header#rowTop
           .page-header__row-top.page-header__row-top--inner#rowTop
             .container.row
+              button.hamburger.hamburger--spin(type="button")
+                span.hamburger-box
+                  span.hamburger-inner
               .logo
                 a.logo__text.text.text--fw700(href="index.html") Flycompass
               nav.main-nav.grow.row.row--ai-c
-                ul.main-nav__list.row.m--l-a
+                ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
-                    a.main-nav__item.text.text--white14.text--fw600(href="index.html") Home
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="index.html") Home
                   li.main-nav__items
                     a.main-nav__item.text.text--white14.text--fw600(href="services.html") Services
                   li.main-nav__items
@@ -24,7 +27,7 @@ html(class="no-js", lang="ru")
                   li.main-nav__items
                     a.main-nav__item.text.text--white14.text--fw600(href="contact-us.html") Contact us
                   li.main-nav__items
-                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="blog.html") Blog
+                    a.main-nav__item.text.text--white14.text--fw600(href="blog.html") Blog
                   li.main-nav__items
                 .search
                   button.search__button.button(type="button")
@@ -38,7 +41,7 @@ html(class="no-js", lang="ru")
                           input.search__form-input.text.text--white30.text--fw700(type="text" name="search" placeholder="Search..." autofocus)
                           span.search__icon.search__icon--form
                             != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
-              .socials.row.row--ai-c.m--l30
+              .socials.socials--header.row.row--ai-c.m--l30
                 a.socials__items.socials__items--fb(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
                 a.socials__items.socials__items--tw(href="#")
