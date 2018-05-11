@@ -89,20 +89,21 @@ html(class="no-js", lang="ru")
           .contact-us.m--b30
             form.contact-us__form.container.m--b10(action="action.php" method="post")
               ul.contact-us__form-list
+                li.contact-us__form-list-items.row.row--jc-sb
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="name") Your name:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="text" placeholder="Enter please your name" required)#name
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="email") Your email:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="email" placeholder="Enter please your email" required)#email
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="phone") Your phone:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="tel" placeholder="Enter please your phone" required)#phone
                 li.contact-us__form-list-items
-                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.text--center.m--b10(for="name") Your name:
-                  .contact-us__form-input-wrap
-                    input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--center(type="text" placeholder="Enter please your name" required)#name
-                li.contact-us__form-list-items
-                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.text--center.m--b10(for="email") Your email:
-                  .contact-us__form-input-wrap
-                    input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--center(type="email" placeholder="Enter please your email" required)#email
-                li.contact-us__form-list-items
-                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.text--center.m--b10(for="phone") Your phone:
-                  .contact-us__form-input-wrap
-                    input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--center(type="tel" placeholder="Enter please your phone" required)#phone
-                li.contact-us__form-list-items
-                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.text--center.m--b10(for="mesage") Your message:
+                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="mesage") Your message:
                   .contact-us__form-textarea-wrap
                     textarea.contact-us__form-input.contact-us__form-input--textarea.text.text--grayLowLight14.text--fw300(placeholder="Enter please your message" required)#mesage
                 li.contact-us__form-list-items.row.row--jc-c
