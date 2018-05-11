@@ -100,24 +100,21 @@
   background-repeat no-repeat
   background-size cover
   
-.home__feedback-button-wrap
-  position relative
-  
 .home__feedback-button
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items center
+  
   transition 0.2s ease
   &:hover
     background-color grey
   
 .home__feedback-tel-icon
-  position absolute
-  top -3px
-  left 25px
-  bottom 0
-  
   display block
   width 10px
   height 13px
-  margin auto
+  margin-right 5px
   
   transform rotate(7deg)
   .tel
@@ -125,3 +122,115 @@
     height 13px
     
     fill white
+    
+.home__feedback-cart
+  width 25%
+  height 165px
+  padding 0 40px
+  
+  background-color blueLight
+  &:nth-child(2n)
+    background-color #23aed9
+  
+.home__feedback-pin-icon
+  display block
+  width 26px
+  height 46px
+  .pin
+    width 26px
+    height 46px
+    
+    fill white
+    
+.home__feedback-cart-tel-icon
+  display block
+  width 36px
+  height 46px
+  .tel
+    width 36px
+    height 46px
+    
+    fill white
+    
+.home__feedback-clock-icon
+  display block
+  width 39px
+  height 46px
+  .clock
+    width 39px
+    height 46px
+    
+    fill white
+    
+.home__feedback-mail-icon
+  display block
+  width 46px
+  height 46px
+  .mail
+    width 46px
+    height 46px
+    
+    fill white
+  &--blogMail
+    width 15px
+    height 15px
+    .mail
+      width 15px
+      height 15px
+    
+.home__scroll-top
+  position fixed
+  right 30px
+  bottom 50px
+  
+  display flex
+  justify-content center
+  align-items center
+  width 44px
+  height 44px
+  
+  background-color blueLight
+  
+  border-radius 50%
+  
+  transition all 0.2s ease
+  &:hover
+    background-color gray
+  &--hidden
+    visibility hidden
+    
+    background-color transparent
+    
+    transition all 0.2s ease
+    .scroll-top-arrow
+      display none
+    
+.scroll-top-arrow
+  position relative
+  
+  display block
+  width 10px
+  height 10px
+  &::before,
+  &::after
+    position absolute
+    top 0
+    bottom 0
+    
+    content ''
+    
+    width 100%
+    height 2px
+    margin auto
+    
+    background-color white
+  &::before
+    left 3px
+    
+    transform rotate(45deg)
+  &::after
+    right 3px
+    
+    transform rotate(-45deg)
+    
+    

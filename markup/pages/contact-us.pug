@@ -1,0 +1,137 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header
+          .page-header__row-top.page-header__row-top--inner#rowTop
+            .container.row
+              .logo
+                a.logo__text.text.text--fw700(href="index.html") Flycompass
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="index.html") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="#") Services
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="contact-us.html") Contact us
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="blog.html") Blog
+                  li.main-nav__items
+                .search
+                  button.search__button.button(type="button")
+                    span.search__icon
+                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+                  .search__form.search__form--hidden
+                    .row.row--jc-c.row--ia-c.grow
+                      span.search__form-exit
+                      .column.column--jc-c
+                        .search__form-input-wrap.b--w445
+                          input.search__form-input.text.text--white30.text--fw700(type="text" name="search" placeholder="Search..." autofocus)
+                          span.search__icon.search__icon--form
+                            != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+              .socials.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+        main.page-content
+        
+          .home
+            a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
+              span.scroll-top-arrow
+              
+          .breadcrumbs
+            .container.row.row--jc-sb.row--ai-c
+              h2.text.text--blueLight24.text--fw800 Contact us
+              .row
+                a.breadcrumbs__link.text.text--grayLowLight12.text--fw400.text--uppercase(href="index.html") Home
+                p.breadcrumbs__slash.text.text--grayLowLight12.text--fw400.text--uppercase /
+                a.breadcrumbs__link.breadcrumbs__link--active.text.text--grayLowLight12.text--fw400.text--uppercase Contact us
+                
+          .home.m--b15
+            .row
+              .home__feedback-cart.row.row--ai-c
+                span.home__feedback-pin-icon.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'pin', className: 'pin'})
+                .b
+                  h2.text.text--white16.text--white700.m--b10 Visit Our Company at
+                  p.text.text--white14.text--400 Address: 4578 Marmora Road, Glasgow
+              .home__feedback-cart.row.row--ai-c
+                span.home__feedback-cart-tel-icon.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
+                .b
+                  h2.text.text--white16.text--white700.m--b10 Have a Questions? Call us
+                  p.text.text--white14.text--400 Phones: 01908 315501
+              .home__feedback-cart.row.row--ai-c
+                span.home__feedback-clock-icon.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'clock', className: 'clock'})
+                .b
+                  h2.text.text--white16.text--white700.m--b10 We are Open
+                  p.text.text--white14.text--400 Working time: Monday–Friday: 08:00–18:00;
+              .home__feedback-cart.row.row--ai-c
+                span.home__feedback-mail-icon.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail'})
+                .b
+                  h2.text.text--white16.text--white700.m--b10 Stay in Touch
+                  p.text.text--white14.text--400 Email: info@demolink.org
+                  
+          .contact-us.m--b30
+            form.contact-us__form.container.m--b10(action="action.php" method="post")
+              ul.contact-us__form-list
+                li.contact-us__form-list-items.row.row--jc-sb
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="name") Your name:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="text" placeholder="Enter please your name" required)#name
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="email") Your email:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="email" placeholder="Enter please your email" required)#email
+                  .b--w375
+                    label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="phone") Your phone:
+                    .contact-us__form-input-wrap
+                      input.contact-us__form-input.text.text--grayLowLight14.text--fw300(type="tel" placeholder="Enter please your phone" required)#phone
+                li.contact-us__form-list-items
+                  label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10(for="mesage") Your message:
+                  .contact-us__form-textarea-wrap
+                    textarea.contact-us__form-input.contact-us__form-input--textarea.text.text--grayLowLight14.text--fw300(placeholder="Enter please your message" required)#mesage
+                li.contact-us__form-list-items.row.row--jc-c
+                  .b--w115
+                    button.button.button--fill-blueLowLight.button--p-tb10.text.text--white13.text--fw400.text--uppercase(type="submit") Submit
+            .contact-us__map.container
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10887.285873822388!2d28.86193345!3d46.984841149999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1525968567542" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              
+                    
+            
+        
+      footer.page-footer
+        .footer-content
+          .container.row.row--jc-sb.row--ai-c
+            .logo
+                a.logo__text.text.text--fw700(href="index.html") Flycompass
+            .socials.socials--footer.row.row--ai-c
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
