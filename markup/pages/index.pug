@@ -2,7 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
   include ../components/head/head.pug
   head
-    +head(head.defaults)
+    +head(head.index)
   body.page
     |%=symbols=%
 
@@ -18,7 +18,7 @@ html(class="no-js", lang="ru")
                   li.main-nav__items
                     a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="#") Home
                   li.main-nav__items
-                    a.main-nav__item.text.text--white14.text--fw600(href="#") Services
+                    a.main-nav__item.text.text--white14.text--fw600(href="services.html") Services
                   li.main-nav__items
                     a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
                   li.main-nav__items
@@ -54,7 +54,7 @@ html(class="no-js", lang="ru")
                   h3.text.text--white50.text--fw600.m--b25 We can assist You in This!
                   p.text.text--white16.text--fw300.m--b40 Our skilled team of experts will provide You with top business plans!
                   .b--w230
-                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more about us
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
             .slider__slide
               img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
               .slider__slide-text-block.column.column--jc-c
@@ -63,7 +63,7 @@ html(class="no-js", lang="ru")
                   h3.text.text--white50.text--fw600.m--b25 Tenacious at What We Do!
                   p.text.text--white16.text--fw300.m--b40 Be sure that Your business will keep being profitable at any time!
                   .b--w230
-                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more about us
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
           
         main.page-content.page-content--home
           .home
@@ -80,7 +80,7 @@ html(class="no-js", lang="ru")
                     p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We provide international consultancy services to companies worldwide
                     .home__features-border.m--b25
                     .b--w170
-                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
                   .home__features-cart.column.column--ai-c.b--w370
                     span.home__experience-icon.m--b15
                       != pugHelpers.Icon.call(locals, {iconName: 'experience', className: 'experience'})
@@ -88,7 +88,7 @@ html(class="no-js", lang="ru")
                     p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our qualified consultants can help your business grow
                     .home__features-border.m--b25
                     .b--w170
-                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
                   .home__features-cart.column.column--ai-c.b--w370
                     span.home__business-icon.m--b15
                       != pugHelpers.Icon.call(locals, {iconName: 'business', className: 'business'})
@@ -96,7 +96,7 @@ html(class="no-js", lang="ru")
                     p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We can review your business and advise on how to improve
                     .home__features-border.m--b25
                     .b--w170
-                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
                 
                 h2.text.text--blueLight14.text--fw600.text--center.text--uppercase.m--b15 Welcome!
                 h3.text.text--gray50.text--center.text--fw200 Start Improving
@@ -135,7 +135,7 @@ html(class="no-js", lang="ru")
                     p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We value our clients and develop projects together. Our business consultants have tons of experience and expertise to provide the top quality service for You.
                     .home__features-border.m--b25
                     .b--w170
-                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
                 .home__about-cart.b--w370
                   .home__about-cart-img-wrap.m--b20
                     img.home__about-cart-img(src="%=static=%img/content/home-about-img2.jpg" alt="about-img")
@@ -144,7 +144,7 @@ html(class="no-js", lang="ru")
                     p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our team of analysts uses advanced technologies in order to achieve maximum results in business forecasts for the future of the world market.
                     .home__features-border.m--b25
                     .b--w170
-                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Learn more
+                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
             
             .home__feedback.row.row--jc-c.row--ai-c
               .container.column.column--ai-c
