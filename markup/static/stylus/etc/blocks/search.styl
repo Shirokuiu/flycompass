@@ -20,7 +20,119 @@
     .search
       fill blueLight
   &--search
-    
     &:hover
       .search
         fill white
+  &--form
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    
+    width 36px
+    height 36px
+    margin auto
+    
+    cursor pointer
+    .search
+      width 36px
+      height 36px
+      
+      fill blueLight
+        
+.search__form
+  position fixed
+  top 0
+  left 0
+  
+  display flex
+  width 100vw
+  height 100vh
+  
+  background-color rgba(25, 25, 29, 0.9)
+  
+  transition height 0.3s ease
+  &--hidden
+    visibility hidden
+    height 0
+    .search__form-exit
+      display none
+    .search__form-input-wrap
+      display none
+  
+.search__form-exit
+  position absolute
+  top 100px
+  right 60px
+  
+  display block
+  width 12px
+  height 16px
+  
+  cursor pointer
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 12px
+    height 2px
+    
+    background-color #bebebf
+    
+    transition 0.2s ease
+  &::before
+    transform rotate(45deg)
+  &::after
+    transform rotate(-45deg)
+  &:hover
+    &::before,
+    &::after
+      background-color blueLight
+  
+.search__form-input-wrap
+  position relative
+  
+.search__form-input
+  reset-input()
+  
+  padding-left 10px
+  padding-right 40px
+  
+  border-left 3px solid white
+  &::-webkit-input-placeholder {
+    color white
+    font-size: 30px;
+    line-height: 33px;
+    font-weight 700
+
+    opacity: 1;
+  }
+  &:-moz-input-placeholder {
+    color white
+    font-size: 30px;
+    line-height: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight 700
+
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color white
+    font-size: 30px;
+    line-height: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight 700
+
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color white
+    font-size: 30px;
+    line-height: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight 700
+
+    opacity: 1;
+  }

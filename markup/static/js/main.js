@@ -9,7 +9,9 @@
         loop: true,
         items: 1,
         slideTransition: 'ease',
-        smartSpeed: 350
+        smartSpeed: 350,
+        autoplay: true,
+        autoplayHoverPause:true
       });
     });
   }
@@ -46,6 +48,34 @@ $(document).ready(function(){
     },
     offset: -200
   })
+})();
+
+(function () {
+  var search = document.querySelector('.search');
+  
+  if (search !== null) {
+    var searchItem = search.querySelector('.search__button');
+    var searchForm = search.querySelector('.search__form');
+    var searchExit = search.querySelector('.search__form-exit');
+    
+    var closeEsc = function (e) {
+      if (e.keyCode === 27) {
+        searchForm.classList.add('search__form--hidden');
+      }
+    }
+    
+    searchItem.addEventListener('click', function () {
+      searchForm.classList.remove('search__form--hidden');
+      
+      document.addEventListener('keydown', closeEsc);
+    });
+    
+    searchExit.addEventListener('click', function () {
+      searchForm.classList.add('search__form--hidden');
+      
+      document.removeEventListener('keydown', closeEsc);
+    });
+  }
 })();
 
 /*
