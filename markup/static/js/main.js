@@ -10,7 +10,7 @@
         items: 1,
         slideTransition: 'ease',
         smartSpeed: 350,
-        autoplay: false,
+        autoplay: true,
         autoplayHoverPause:true
       });
     });
