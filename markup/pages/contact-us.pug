@@ -7,7 +7,7 @@ html(class="no-js", lang="ru")
     |%=symbols=%
 
     .wrapper
-      .content
+      .content.content--4k
         header.page-header#rowTop
           .page-header__row-top.page-header__row-top--inner#rowTop
             .container.row
@@ -26,21 +26,6 @@ html(class="no-js", lang="ru")
                     a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
                   li.main-nav__items
                     a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="contact-us.html") Contact us
-                  li.main-nav__items
-                    a.main-nav__item.text.text--white14.text--fw600(href="blog.html") Blog
-                  li.main-nav__items
-                .search
-                  button.search__button.button(type="button")
-                    span.search__icon
-                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
-                  .search__form.search__form--hidden
-                    .row.row--jc-c.row--ia-c.grow
-                      span.search__form-exit
-                      .column.column--jc-c
-                        .search__form-input-wrap.b--w445
-                          input.search__form-input.text.text--white30.text--fw700(type="text" name="search" placeholder="Search..." autofocus)
-                          span.search__icon.search__icon--form
-                            != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
               .socials.socials--header.row.row--ai-c.m--l30
                 a.socials__items.socials__items--fb(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
@@ -48,7 +33,7 @@ html(class="no-js", lang="ru")
                   != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
                 a.socials__items.socials__items--inst(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-        main.page-content
+        main.page-content.page-content--4k
         
           .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
@@ -89,7 +74,7 @@ html(class="no-js", lang="ru")
                   h2.text.text--white16.text--white700.m--b10 Stay in Touch
                   p.text.text--white14.text--400 Email: info@demolink.org
                   
-          .contact-us.m--b30
+          .contact-us.contact-us--4k.m--b30
             form.contact-us__form.container.m--b10(action="action.php" method="post")
               ul.contact-us__form-list
                 li.contact-us__form-list-items.row.row--jc-sb.row--media1190-block

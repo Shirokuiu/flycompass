@@ -26,21 +26,6 @@ html(class="no-js", lang="ru")
                     a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
                   li.main-nav__items
                     a.main-nav__item.text.text--white14.text--fw600(href="contact-us.html") Contact us
-                  li.main-nav__items
-                    a.main-nav__item.text.text--white14.text--fw600(href="blog.html") Blog
-                  li.main-nav__items
-                .search
-                  button.search__button.button(type="button")
-                    span.search__icon
-                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
-                  .search__form.search__form--hidden
-                    .row.row--jc-c.row--ia-c.grow
-                      span.search__form-exit
-                      .column.column--jc-c
-                        .search__form-input-wrap.b--w445
-                          input.search__form-input.text.text--white30.text--fw700(type="text" name="search" placeholder="Search..." autofocus)
-                          span.search__icon.search__icon--form
-                            != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
               .socials.socials--header.row.row--ai-c.m--l30
                 a.socials__items.socials__items--fb(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
