@@ -1,6 +1,22 @@
 'use strict';
 
 (function () {
+  var preloader = document.querySelector('.preloader');
+  
+  if (preloader !== null) {
+    document.body.onload = function () {
+      setTimeout(function () {
+        if (!preloader.classList.contains('preloader--hidden')) {
+          preloader.classList.add('preloader--hidden');
+        }
+      });
+    };
+  } else {
+    return false
+  }
+})();
+
+(function () {
   var slider = document.querySelector('.slider');
   
   if (slider !== null) {

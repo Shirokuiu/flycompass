@@ -15,7 +15,7 @@ html(class="no-js", lang="ru")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") Flycompass
+                a.logo__text.text.text--fw700(href="index.html") Zg company
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
@@ -97,7 +97,9 @@ html(class="no-js", lang="ru")
         .footer-content
           .container.row.row--jc-sb.row--ai-c
             .logo
-                a.logo__text.text.text--fw700(href="index.html") Flycompass
+              a.logo__link(href="index.html")
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo.svg")
             .socials.socials--footer.row.row--ai-c
               a.socials__items.socials__items--fb(href="#")
                 != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
