@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>About</title>
+        <title>Home</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main98lbik.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainmigczt.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -121,9 +121,14 @@
             </symbol>
         </svg>
         <div class="wrapper">
-            <div class="content column content--4k">
-                <header class="page-header" id="rowTop">
-                    <div class="page-header__row-top page-header__row-top--inner" id="rowTop">
+            <div class="preloader">
+                <div class="preloader__img-wrap">
+                    <img class="preloader__img" src="static/img/content/logo.svg">
+                </div>
+            </div>
+            <div class="content">
+                <header class="page-header page-header--home" id="rowTop">
+                    <div class="page-header__row-top page-header__row-top--home">
                         <div class="container row">
                             <button class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
                             </button>
@@ -131,11 +136,11 @@
                             </div>
                             <nav class="main-nav grow row row--ai-c">
                                 <ul class="main-nav__list main-nav__list--mobileHidden row m--l-a">
-                                    <li class="main-nav__items"><a class="main-nav__item text text--white14 text--fw600" href="index.html">Home</a>
+                                    <li class="main-nav__items"><a class="main-nav__item main-nav__item--active text text--white14 text--fw600" href="index.html">Home</a>
                                     </li>
                                     <li class="main-nav__items"><a class="main-nav__item text text--white14 text--fw600" href="services.html">Services</a>
                                     </li>
-                                    <li class="main-nav__items"><a class="main-nav__item main-nav__item--active text text--white14 text--fw600" href="about.html">About</a>
+                                    <li class="main-nav__items"><a class="main-nav__item text text--white14 text--fw600" href="about.html">About</a>
                                     </li>
                                     <li class="main-nav__items"><a class="main-nav__item text text--white14 text--fw600" href="contact-us.html">Contact us</a>
                                     </li>
@@ -160,29 +165,203 @@
                             </div>
                         </div>
                     </div>
-                </header>
-                <main class="page-content grow column page-content--4k">
-                    <div class="home"><a class="home__scroll-top home__scroll-top--hidden" href="#rowTop"><span class="scroll-top-arrow"></span></a>
-                    </div>
-                    <div class="breadcrumbs m--b15">
-                        <div class="container row row--jc-sb row--ai-c">
-                            <h2 class="text text--blueLight24 text--fw800">About</h2>
-                            <div class="row"><a class="breadcrumbs__link text text--grayLowLight12 text--fw400 text--uppercase" href="index.html">Home</a>
-                                <p class="breadcrumbs__slash text text--grayLowLight12 text--fw400 text--uppercase">/</p><a class="breadcrumbs__link breadcrumbs__link--active text text--grayLowLight12 text--fw400 text--uppercase">About</a>
+                    <div class="slider owl-carousel owl-theme">
+                        <div class="slider__slide">
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="static/img/content/slider-img1-mobile.jpg 1x, static/img/content/slider-img1.jpg 2x">
+                                    <img src="static/img/content/slider-img1.jpg" alt="slide1">
+                            </picture>
+                            <div class="slider__slide-text-block column column--jc-c">
+                                <div class="container">
+                                    <h2 class="slider__headline text text--white50 text--fw200 m--b5">Want to Grow Your Business?</h2>
+                                    <h3 class="slider__title text text--white50 text--fw600 m--b25">We can assist You in This!</h3>
+                                    <p class="slider__text text text--white16 text--fw300 m--b40">Our skilled team of experts will provide You with top business plans!</p>
+                                    <div class="b--w230 b--media768-center"><a class="slider__button button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more about us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="static/img/content/slider-img2-mobile.jpg 1x, static/img/content/slider-img2.jpg 2x">
+                                    <img src="static/img/content/slider-img2.jpg" alt="slide2">
+                            </picture>
+                            <div class="slider__slide-text-block column column--jc-c">
+                                <div class="container">
+                                    <h2 class="slider__headline text text--white50 text--fw200 m--b5">Strategic, Adaptable and</h2>
+                                    <h3 class="slider__title text text--white50 text--fw600 m--b25">Tenacious at What We Do!</h3>
+                                    <p class="slider__text text text--white16 text--fw300 m--b40">Be sure that Your business will keep being profitable at any time!</p>
+                                    <div class="b--w230 b--media768-center"><a class="slider__button button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more about us</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="about about--4k m--b10"></div>
-                    <div class="home__feedback home__feedback--4k row row--jc-c row--ai-c m--t-a">
-                        <div class="container column column--ai-c">
-                            <h2 class="text text--white50 text--center text--fw200 m--b5 text--media880-fs25">Still Have Some Questions Left?</h2>
-                            <h3 class="text text--white50 text--center text--fw600 m--b15 text--media880-fs25">Call us <a class="text text--white50 text--media880-fs25" href="tel:">Tel: 01908 315501</a></h3>
-                            <p class="text text--white16 text--fw300 m--b40 text--media880-center">Feel free to contact our support team to learn more about the services provided by us and multiple offers for Your business!</p>
-                            <div class="b--w200 row row--ai-c"><a class="home__feedback-button button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="#">Call us today<span class="home__feedback-tel-icon">
+                </header>
+                <main class="page-content page-content--home">
+                    <div class="home"><a class="home__scroll-top home__scroll-top--hidden" href="#rowTop"><span class="scroll-top-arrow"></span></a>
+                        <div class="home__features">
+                            <div class="container">
+                                <div class="home__features-row-top row row--jc-sb">
+                                    <div class="home__features-cart column column--ai-c b--w370"><span class="home__deal-icon m--b15">
+            <svg class="deal" width="512px" height="341.33px">
+                <use xlink:href="#deal"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 text--center m--b10">International Consultancy</h2>
+                                        <p class="text text--grayLight14 text--fw400 text--center text--lh27 m--b25">We provide international consultancy services to companies worldwide</p>
+                                        <div class="home__features-border m--b25"></div>
+                                        <div class="b--w170"><a class="home__features-button button button--fill-grey button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more</a>
+                                        </div>
+                                    </div>
+                                    <div class="home__features-cart column column--ai-c b--w370"><span class="home__experience-icon m--b15">
+            <svg class="experience" width="426.67px" height="512px">
+                <use xlink:href="#experience"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 text--center m--b10">Experience</h2>
+                                        <p class="text text--grayLight14 text--fw400 text--center text--lh27 m--b25">Our qualified consultants can help your business grow</p>
+                                        <div class="home__features-border m--b25"></div>
+                                        <div class="b--w170"><a class="home__features-button button button--fill-grey button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more</a>
+                                        </div>
+                                    </div>
+                                    <div class="home__features-cart column column--ai-c b--w370"><span class="home__business-icon m--b15">
+            <svg class="business" width="484.8px" height="512px">
+                <use xlink:href="#business"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 text--center m--b10">Business Services</h2>
+                                        <p class="text text--grayLight14 text--fw400 text--center text--lh27 m--b25">We can review your business and advise on how to improve</p>
+                                        <div class="home__features-border m--b25"></div>
+                                        <div class="b--w170"><a class="home__features-button button button--fill-grey button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="text text--blueLight14 text--fw600 text--center text--uppercase m--b15">Welcome!</h2>
+                                <h3 class="text text--gray50 text--center text--fw200 text--media880-fs25">Start Improving</h3>
+                                <h3 class="text text--gray50 text--center text--fw600 m--b20 text--media880-fs25">Your Business Today!</h3>
+                                <p class="text text--grayLowLight16 text--center text--fw300 m--b60">From investment to strategic plans, we can assist you with everything to make your business flourish!</p>
+                                <div class="row row--jc-sb row--media1020-block">
+                                    <div class="b--w355 b--media1020-w-a column--media1020-ai-c"><span class="home__light-icon m--b20">
+            <svg class="light" width="341.34px" height="512px">
+                <use xlink:href="#light"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 m--b10">Financial audit of your business</h2>
+                                        <p class="text text--grayLowLight14 text--fw400 text--lh27">We can review your business and advise on how you can improve profit and lower costs</p>
+                                    </div>
+                                    <div class="b--w355 b--media1020-w-a column--media1020-ai-c"><span class="home__like-icon m--b20">
+            <svg class="like" width="512px" height="491.13px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 m--b10">Unique Strategic Plans at Work</h2>
+                                        <p class="text text--grayLowLight14 text--fw400 text--lh27">Our staff performance measures ensure we can monitor your staff's performance to improve your companies profit</p>
+                                    </div>
+                                    <div class="b--w355 b--media1020-w-a column--media1020-ai-c"><span class="home__mechanism-icon m--b20">
+            <svg class="mechanism" width="512px" height="479.28px">
+                <use xlink:href="#mechanism"></use>
+            </svg>
+        </span>
+                                        <h2 class="text text--gray16 text--fw800 m--b10">Excellent Quality Ensured</h2>
+                                        <p class="text text--grayLowLight14 text--fw400 text--lh27">Over 500 clients are satisfied with the services we provide. Our professional team has immaculate reputation in the business world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__about container row">
+                            <div class="b--w340 b--media1180-w-a m--r50 m--media1180-reset-m-r m--media1180-b30">
+                                <h2 class="text text--blueLight14 text--fw600 text--uppercase m--b20 text--media1180-center">About</h2>
+                                <h2 class="text text--gray50 text--fw200 m--b10 text--media1180-center">Start </h2>
+                                <h2 class="text text--gray50 text--fw600 m--b25 text--media1180-center">Improving</h2>
+                                <p class="text text--grayLowLight16 text--300 text--lh27 text--media1180-center">Our company started out in 2017, We have assisted our clients in creating business plans, strategic planning and have saved our clients thousands of pounds in improving sales and reducing costs</p>
+                            </div>
+                            <div class="b grow row row--jc-sb row--media768-block">
+                                <div class="home__about-cart b--w370">
+                                    <div class="home__about-cart-img-wrap m--b20">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="static/img/content/home-about-img1-mobile.jpg 1x, static/img/content/home-about-img1.jpg 2x">
+                                                <img class="home__about-cart-img" src="static/img/content/home-about-img1.jpg" alt="about-img">
+                                        </picture>
+                                    </div>
+                                    <div class="home__about-cart-content column column--ai-c">
+                                        <h2 class="text text--gray16 text--fw800 text--center m--b10">Professional Team at Work</h2>
+                                        <p class="text text--grayLight14 text--fw400 text--center text--lh27 m--b25">We value our clients and develop projects together. Our business consultants have tons of experience and expertise to provide the top quality service for You.</p>
+                                        <div class="home__features-border m--b25"></div>
+                                        <div class="b--w170"><a class="home__features-button home__features-button--about button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home__about-cart b--w370">
+                                    <div class="home__about-cart-img-wrap m--b20">
+                                        <picture>
+                                            <source media="(max-width: 480px)" srcset="static/img/content/home-about-img2-mobile.jpg 1x, static/img/content/home-about-img2.jpg 2x">
+                                                <img class="home__about-cart-img" src="static/img/content/home-about-img2.jpg" alt="about-img">
+                                        </picture>
+                                    </div>
+                                    <div class="home__about-cart-content column column--ai-c">
+                                        <h2 class="text text--gray16 text--fw800 text--center m--b10">Bravely Facing the Future</h2>
+                                        <p class="text text--grayLight14 text--fw400 text--center text--lh27 m--b25">Our team of analysts uses advanced technologies in order to achieve maximum results in business forecasts for the future of the world market.</p>
+                                        <div class="home__features-border m--b25"></div>
+                                        <div class="b--w170"><a class="home__features-button home__features-button--about button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="services.html">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__feedback row row--jc-c row--ai-c">
+                            <div class="container column column--ai-c">
+                                <h2 class="text text--white50 text--center text--fw200 m--b5 text--media880-fs25">Still Have Some Questions Left?</h2>
+                                <h3 class="text text--white50 text--center text--fw600 m--b15 text--media880-fs25">Call us <a class="text text--white50 text--media880-fs25" href="tel:">Tel: 01908 315501</a></h3>
+                                <p class="text text--white16 text--fw300 m--b40 text--media880-center">Feel free to contact our support team to learn more about the services provided by us and multiple offers for Your business!</p>
+                                <div class="b--w200 row row--ai-c"><a class="home__feedback-button button button--fill-blueLight button--p-tb17 text text--white13 text--fw500 text--uppercase" href="#">Call us today<span class="home__feedback-tel-icon">
             <svg class="tel" width="512px" height="510.84px">
                 <use xlink:href="#tel"></use>
             </svg>
         </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row--wrap row--media640-block">
+                            <div class="home__feedback-cart row row--ai-c"><span class="home__feedback-pin-icon m--r15">
+            <svg class="pin" width="341.33px" height="512px">
+                <use xlink:href="#pin"></use>
+            </svg>
+        </span>
+                                <div class="b">
+                                    <h2 class="text text--white16 text--white700 m--b10">Visit Our Company at</h2>
+                                    <p class="text text--white14 text--400">Address: 4578 Marmora Road, Glasgow</p>
+                                </div>
+                            </div>
+                            <div class="home__feedback-cart row row--ai-c"><span class="home__feedback-cart-tel-icon m--r15">
+            <svg class="tel" width="512px" height="510.84px">
+                <use xlink:href="#tel"></use>
+            </svg>
+        </span>
+                                <div class="b">
+                                    <h2 class="text text--white16 text--white700 m--b10">Have a Questions? Call us</h2>
+                                    <p class="text text--white14 text--400">Phones: 01908 315501</p>
+                                </div>
+                            </div>
+                            <div class="home__feedback-cart row row--ai-c"><span class="home__feedback-clock-icon m--r15">
+            <svg class="clock" width="512px" height="512px">
+                <use xlink:href="#clock"></use>
+            </svg>
+        </span>
+                                <div class="b">
+                                    <h2 class="text text--white16 text--white700 m--b10">We are Open</h2>
+                                    <p class="text text--white14 text--400">Working time: Monday–Friday: 08:00–18:00;</p>
+                                </div>
+                            </div>
+                            <div class="home__feedback-cart row row--ai-c"><span class="home__feedback-mail-icon m--r15">
+            <svg class="mail" width="512px" height="402.28px">
+                <use xlink:href="#mail"></use>
+            </svg>
+        </span>
+                                <div class="b">
+                                    <h2 class="text text--white16 text--white700 m--b10">Stay in Touch</h2>
+                                    <p class="text text--white14 text--400">Email: info@demolink.org</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,8 +401,9 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="static/js/separate-js/owl.carousel.min.js"></script>
         <script src="static/js/separate-js/noframework.waypoints.min.js"></script>
-        <script src="static/js/main98lbik.min.js"></script>
+        <script src="static/js/mainmigczt.min.js"></script>
     </body>
 
 </html>
