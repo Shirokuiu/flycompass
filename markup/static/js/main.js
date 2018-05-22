@@ -24,10 +24,10 @@
       $(".slider").owlCarousel({
         loop: true,
         items: 1,
+        animateOut: 'fadeOut',
         slideTransition: 'ease',
         smartSpeed: 350,
-        autoplay: true,
-        autoplayHoverPause:true
+        autoplay: true
       });
     });
   }

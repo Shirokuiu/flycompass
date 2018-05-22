@@ -7,7 +7,7 @@ html(class="no-js", lang="ru")
     |%=symbols=%
 
     .wrapper
-      .content.content--4k
+      .content.column
         header.page-header#rowTop
           .page-header__row-top.page-header__row-top--inner#rowTop
             .container.row
@@ -15,7 +15,8 @@ html(class="no-js", lang="ru")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") Zg company
+                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                  span & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
@@ -33,48 +34,32 @@ html(class="no-js", lang="ru")
                   != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
                 a.socials__items.socials__items--inst(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-        main.page-content.page-content--4k
+        main.page-content.grow.column.page-content--4k
         
           .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
-              
-          .breadcrumbs.m--b10
-            .container.row.row--jc-sb.row--ai-c
-              h2.text.text--blueLight24.text--fw800 Services
-              .row
-                a.breadcrumbs__link.text.text--grayLowLight12.text--fw400.text--uppercase(href="index.html") Home
-                p.breadcrumbs__slash.text.text--grayLowLight12.text--fw400.text--uppercase /
-                a.breadcrumbs__link.breadcrumbs__link--active.text.text--grayLowLight12.text--fw400.text--uppercase Services
         
-          .services.services--4k
-            .services__content.m--b20.container        
-              .services__img-wrap
-                picture
-                  source(media="(max-width: 480px)" srcset="%=static=%img/content/services-workplace-img-mobile.jpg 1x, %=static=%img/content/services-workplace-img.jpg 2x")
-                  img.services__img(src="%=static=%img/content/services-workplace-img.jpg")
-              h2.text.m--b20.text--center.text--grayMedium30.text--tw600 Business Consultancy
-              p.text.m--b20.text--black16.text--lh27.text--media620-center We provide business consultancy services to companies worldwide including small and multi national companies
-              h2.text.m--b20.text--center.text--grayMedium30.text--tw600 Financial audit
-              p.text.m--b20.text--black16.text--lh27.text--media620-center We can provide a financial audit of your company and review costs and profit margins for your company
-              h2.text.m--b20.text--center.text--grayMedium30.text--tw600 Procurement Services
-              p.text.m--b20.text--black16.text--lh27.text--media620-center Reviewing your supplier database can improve the costs of your business, ensuring you have the correct suppliers are vital. We can help in supplier reviews and performance monitoring
-              h2.text.m--b20.text--center.text--grayMedium30.text--tw600 Staff
-              p.text.m--b30.text--black16.text--lh27.text--media620-center Staff are vital to any companies success we can review, monitor and provide reports on performance
-              h2.text.text--center.text--black36.text--fw600.text--media490-fs25 Call us 
-                span.text.text--blueLowLight36.text--media490-fs25 today 
-                | regarding your business
-                
-          .home__feedback.home__feedback--4k.row.row--jc-c.row--ai-c
-            .container.column.column--ai-c
-              h2.text.text--white50.text--center.text--fw200.m--b5.text--media880-fs25 Still Have Some Questions Left?
-              h3.text.text--white50.text--center.text--fw600.m--b15.text--media880-fs25 Call us 
-                a.text.text--white50.text--media880-fs25(href="tel:") Tel: 01908 315501
-              p.text.text--white16.text--fw300.m--b40.text--media880-center Feel free to contact our support team to learn more about the services provided by us and multiple offers for Your business!
-              .b--w200.row.row--ai-c
-                a.home__feedback-button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Call us today
-                  span.home__feedback-tel-icon
-                    != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
+          .services.grow.row
+            .services__bg    
+            .services__description
+              .services__description-text
+                h2.text.text--white30.text--fw700.m--b50 Our Services
+                p.text.m--b20.text--white18.text--lh27
+                  span.text.text--white21.text--fw700 ZG Investment & Consulting Ltd 
+                  | - combines a wealth of industry knowledge and its capabilities, due to its extensive experience in the field of aviation, and thus is ready to provide its clients with an easy, qualified, and flexible step by step solutions, creating mutually beneficial long-term relationships with its customers.
+                p.text.text--white18.m--b20.text--lh27
+                  span.text.text--white21.text--fw700 ZG Investment & Consulting Ltd 
+                  | - provides and specializes in the following services:
+                ul.services__description-list.m--b10
+                  li.services__description-list-items.text.text--white16.text--lh24 Provision of support services to our customers, by providing them professional consulting, management, Advisory services;
+                  li.services__description-list-items.text.text--white16.text--lh24 Aviation Brokerage and Logistic solutions, including assistance with spare parts and/or spare parts brokerage services;
+                  li.services__description-list-items.text.text--white16.text--lh24 Aviation Market Research and Analysis, including studying of the current long-term and short-term contracts for the provision of aviation services;
+                  li.services__description-list-items.text.text--white16.text--lh24 Research of spare parts suppliers in the field of aviation, including price and delivery time analysis;
+                ul.services__description-list
+                  li.services__description-list-items.text.text--white16.text--lh24 Studying of the current Aviation Trends, from the new Aircraft types, equipment, and spare parts to new specific aviation and narrow-profile aviation tasks, currently trending on the aviation market;
+                  li.services__description-list-items.text.text--white16.text--lh24 Innovative and tailor-made solutions to specific customer’s tasks, to maintain their personal needs in the world of business aviation;
+                  li.services__description-list-items.text.text--white16.text--lh24 Help in solving logistic issues, which can occur during the period of operation in remote locations, away from main operation base;
       footer.page-footer
         .footer-content
           .container.row.row--jc-sb.row--ai-c

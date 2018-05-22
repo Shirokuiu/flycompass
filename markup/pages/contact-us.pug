@@ -15,7 +15,8 @@ html(class="no-js", lang="ru")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") Zg company
+                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                  span & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
@@ -38,42 +39,7 @@ html(class="no-js", lang="ru")
           .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
-              
-          .breadcrumbs
-            .container.row.row--jc-sb.row--ai-c
-              h2.text.text--blueLight24.text--fw800 Contact us
-              .row
-                a.breadcrumbs__link.text.text--grayLowLight12.text--fw400.text--uppercase(href="index.html") Home
-                p.breadcrumbs__slash.text.text--grayLowLight12.text--fw400.text--uppercase /
-                a.breadcrumbs__link.breadcrumbs__link--active.text.text--grayLowLight12.text--fw400.text--uppercase Contact us
                 
-          .home.m--b15
-            .row.row--wrap.row--media640-block
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-pin-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'pin', className: 'pin'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Visit Our Company at
-                  p.text.text--white14.text--400 Address: 4578 Marmora Road, Glasgow
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-cart-tel-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Have a Questions? Call us
-                  p.text.text--white14.text--400 Phones: 01908 315501
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-clock-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'clock', className: 'clock'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 We are Open
-                  p.text.text--white14.text--400 Working time: Monday–Friday: 08:00–18:00;
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-mail-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Stay in Touch
-                  p.text.text--white14.text--400 Email: info@demolink.org
-                  
           .contact-us.contact-us--4k.m--b30
             form.contact-us__form.container.m--b10(action="action.php" method="post")
               ul.contact-us__form-list
@@ -96,7 +62,7 @@ html(class="no-js", lang="ru")
                     textarea.contact-us__form-input.contact-us__form-input--textarea.text.text--grayLowLight14.text--fw300.text--media1190-center(placeholder="Enter please your message" required)#mesage
                 li.contact-us__form-list-items.row.row--jc-c
                   .b--w115
-                    button.button.button--fill-blueLowLight.button--p-tb10.text.text--white13.text--fw400.text--uppercase(type="submit") Submit
+                    button.contact-us__button.button.button--fill-blueLowLight.button--p-tb10.text.text--white13.text--fw400.text--uppercase(type="submit") Submit
             .contact-us__map.container
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10887.285873822388!2d28.86193345!3d46.984841149999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1525968567542" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
               

@@ -9,17 +9,21 @@
 .contact-us__form-list-label
   display block
   
+  color: #212529;
+  font-weight 700
+  
 .contact-us__form-input
   reset-input()
   
-  padding 15px 18px
-  
-  background-color #f6f6f6
-  
-  border 2px solid #f6f6f6
-  border-radius 10px
-  
-  transition 0.2s ease
+  padding: 10px 10px;
+  font-size 18px
+  line-height 21px
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   &:focus
     background-color white
   &--textarea
@@ -29,6 +33,22 @@
     
 .contact-us__map
   height 300px
+  
+.contact-us__button
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   
 @media(min-width 2600px)
   .contact-us

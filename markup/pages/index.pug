@@ -18,7 +18,8 @@ html(class="no-js", lang="ru")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") Zg company
+                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                  span & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
@@ -39,19 +40,19 @@ html(class="no-js", lang="ru")
           .slider.owl-carousel.owl-theme
             .slider__slide
               picture
-                source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img1-mobile.jpg 1x, %=static=%img/content/slider-img1.jpg 2x")
-                img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
+                source(media="(max-width: 1235px)" srcset="%=static=%img/content/slider-img1-tablet.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b5 Want to Grow Your Business?
+                  h2.slider__headline.text.text--white50.text--fw200.m--b5 ZG Investment & Consulting Ltd
                   h3.slider__title.text.text--white50.text--fw600.m--b25 We can assist You in This!
                   p.slider__text.text.text--white16.text--fw300.m--b40 Our skilled team of experts will provide You with top business plans!
                   .b--w230.b--media768-center
-                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="contact-us.html") Contact us
             .slider__slide
               picture
                 source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img2-mobile.jpg 1x, %=static=%img/content/slider-img2.jpg 2x")
-                img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
+                img.slider__slide-img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
               .slider__slide-text-block.column.column--jc-c
                 .container
                   h2.slider__headline.text.text--white50.text--fw200.m--b5 Strategic, Adaptable and
@@ -65,9 +66,13 @@ html(class="no-js", lang="ru")
             
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
-            .home__features
+            .home__features.p--t40
               .container
-                .home__features-row-top.row.row--jc-sb
+                h2.text.text--blueLight14.text--fw600.text--center.text--uppercase.m--b15 Welcome!
+                h3.text.text--gray50.text--center.text--fw200.text--media880-fs25 Start Improving
+                h3.text.text--gray50.text--center.text--fw600.m--b20.text--media880-fs25 Your Business Today!
+                p.text.text--grayLowLight16.text--center.text--fw300.m--b60 We are new established company, registered in Gibraltar, our goal is to match the various requirements that potential customers may have with efficient options and turn-key solutions today, in order to provide our customers with some beneficial long term possibilities for tomorrow.
+                .home__features-row-top.row.row--jc-sb.m--b40
                   .home__features-cart.column.column--ai-c.b--w370
                     span.home__deal-icon.m--b15
                       != pugHelpers.Icon.call(locals, {iconName: 'deal', className: 'deal'})
@@ -92,12 +97,7 @@ html(class="no-js", lang="ru")
                     .home__features-border.m--b25
                     .b--w170
                       a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
-                
-                h2.text.text--blueLight14.text--fw600.text--center.text--uppercase.m--b15 Welcome!
-                h3.text.text--gray50.text--center.text--fw200.text--media880-fs25 Start Improving
-                h3.text.text--gray50.text--center.text--fw600.m--b20.text--media880-fs25 Your Business Today!
-                p.text.text--grayLowLight16.text--center.text--fw300.m--b60 From investment to strategic plans, we can assist you with everything to make your business flourish!
-                
+
                 .row.row--jc-sb.row--media1020-block
                   .b--w355.b--media1020-w-a.column--media1020-ai-c
                     span.home__light-icon.m--b20
@@ -114,73 +114,6 @@ html(class="no-js", lang="ru")
                       != pugHelpers.Icon.call(locals, {iconName: 'mechanism', className: 'mechanism'})
                     h2.text.text--gray16.text--fw800.m--b10 Excellent Quality Ensured
                     p.text.text--grayLowLight14.text--fw400.text--lh27 Over 500 clients are satisfied with the services we provide. Our professional team has immaculate reputation in the business world.
-                    
-            .home__about.container.row
-              .b--w340.b--media1180-w-a.m--r50.m--media1180-reset-m-r.m--media1180-b30
-                h2.text.text--blueLight14.text--fw600.text--uppercase.m--b20.text--media1180-center About
-                h2.text.text--gray50.text--fw200.m--b10.text--media1180-center Start 
-                h2.text.text--gray50.text--fw600.m--b25.text--media1180-center Improving
-                p.text.text--grayLowLight16.text--300.text--lh27.text--media1180-center Our company started out in 2017, We have assisted our clients in creating business plans, strategic planning and have saved our clients thousands of pounds in improving sales and reducing costs
-              .b.grow.row.row--jc-sb.row--media768-block
-                .home__about-cart.b--w370
-                  .home__about-cart-img-wrap.m--b20
-                    picture
-                      source(media="(max-width: 480px)" srcset="%=static=%img/content/home-about-img1-mobile.jpg 1x, %=static=%img/content/home-about-img1.jpg 2x")
-                      img.home__about-cart-img(src="%=static=%img/content/home-about-img1.jpg" alt="about-img")
-                  .home__about-cart-content.column.column--ai-c
-                    h2.text.text--gray16.text--fw800.text--center.m--b10 Professional Team at Work
-                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We value our clients and develop projects together. Our business consultants have tons of experience and expertise to provide the top quality service for You.
-                    .home__features-border.m--b25
-                    .b--w170
-                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
-                .home__about-cart.b--w370
-                  .home__about-cart-img-wrap.m--b20
-                    picture
-                      source(media="(max-width: 480px)" srcset="%=static=%img/content/home-about-img2-mobile.jpg 1x, %=static=%img/content/home-about-img2.jpg 2x")
-                      img.home__about-cart-img(src="%=static=%img/content/home-about-img2.jpg" alt="about-img")
-                  .home__about-cart-content.column.column--ai-c
-                    h2.text.text--gray16.text--fw800.text--center.m--b10 Bravely Facing the Future
-                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our team of analysts uses advanced technologies in order to achieve maximum results in business forecasts for the future of the world market.
-                    .home__features-border.m--b25
-                    .b--w170
-                      a.home__features-button.home__features-button--about.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
-            
-            .home__feedback.row.row--jc-c.row--ai-c
-              .container.column.column--ai-c
-                h2.text.text--white50.text--center.text--fw200.m--b5.text--media880-fs25 Still Have Some Questions Left?
-                h3.text.text--white50.text--center.text--fw600.m--b15.text--media880-fs25 Call us 
-                  a.text.text--white50.text--media880-fs25(href="tel:") Tel: 01908 315501
-                p.text.text--white16.text--fw300.m--b40.text--media880-center Feel free to contact our support team to learn more about the services provided by us and multiple offers for Your business!
-                .b--w200.row.row--ai-c
-                  a.home__feedback-button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="#") Call us today
-                    span.home__feedback-tel-icon
-                      != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
-                    
-            .row.row--wrap.row--media640-block
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-pin-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'pin', className: 'pin'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Visit Our Company at
-                  p.text.text--white14.text--400 Address: 4578 Marmora Road, Glasgow
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-cart-tel-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Have a Questions? Call us
-                  p.text.text--white14.text--400 Phones: 01908 315501
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-clock-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'clock', className: 'clock'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 We are Open
-                  p.text.text--white14.text--400 Working time: Monday–Friday: 08:00–18:00;
-              .home__feedback-cart.row.row--ai-c
-                span.home__feedback-mail-icon.m--r15
-                  != pugHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail'})
-                .b
-                  h2.text.text--white16.text--white700.m--b10 Stay in Touch
-                  p.text.text--white14.text--400 Email: info@demolink.org
 
       footer.page-footer
         .footer-content
