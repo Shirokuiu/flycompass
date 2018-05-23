@@ -1,3 +1,8 @@
+.contact-us__form
+  box-sizing border-box
+  width 50%
+  padding 30px 2%
+
 .contact-us__form-list
   reset-list()
   
@@ -25,16 +30,21 @@
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   &:focus
-    background-color white
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
   &--textarea
     height 240px
     
     resize none
     
 .contact-us__map
-  height 300px
+  width 50%
   
 .contact-us__button
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -49,12 +59,23 @@
   line-height: 1.5;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  
-@media(min-width 2600px)
+  &:hover
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+  &:focus
+    box-shadow: 0 0 0 0.2rem rgba(23,162,184,.5);
+    
+@media(max-width 960px)
   .contact-us
-    &--4k
-      margin-top auto
-      margin-bottom auto !important
+    flex-direction column
+    
+  .contact-us__form
+    width auto
+    
+  .contact-us__map
+    width auto
+    height 360px
     
 @media(max-width 470px)
   .contact-us__form-input

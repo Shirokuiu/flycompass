@@ -7,7 +7,7 @@ html(class="no-js", lang="ru")
     |%=symbols=%
 
     .wrapper
-      .content.content--4k
+      .content.column
         header.page-header#rowTop
           .page-header__row-top.page-header__row-top--inner#rowTop
             .container.row
@@ -16,7 +16,7 @@ html(class="no-js", lang="ru")
                   span.hamburger-inner
               .logo
                 a.logo__text.text.text--fw700(href="index.html") ZG Investment
-                  span & Consulting Ltd
+                  span.m--l5 & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
                   li.main-nav__items
@@ -34,36 +34,36 @@ html(class="no-js", lang="ru")
                   != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
                 a.socials__items.socials__items--inst(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-        main.page-content.page-content--4k
+        main.page-content.grow.column
         
           .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
                 
-          .contact-us.contact-us--4k.m--b30
-            form.contact-us__form.container.m--b10(action="action.php" method="post")
+          .contact-us.grow.row
+            form.contact-us__form.m--b10(action="action.php" method="post")
               ul.contact-us__form-list
-                li.contact-us__form-list-items.row.row--jc-sb.row--media1190-block
-                  .b--w375.b--media1190-w-a.m--media1190-b10
+                li.contact-us__form-list-items.m--b20
+                  .m--b20
                     label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10.text--media1190-center(for="name") Your name:
                     .contact-us__form-input-wrap
                       input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--media1190-center(type="text" placeholder="Enter please your name" required)#name
-                  .b--w375.b--media1190-w-a.m--media1190-b10
+                  .m--b20
                     label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10.text--media1190-center(for="email") Your email:
                     .contact-us__form-input-wrap
                       input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--media1190-center(type="email" placeholder="Enter please your email" required)#email
-                  .b--w375.b--media1190-w-a.m--media1190-b10
+                  .b
                     label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10.text--media1190-center(for="phone") Your phone:
                     .contact-us__form-input-wrap
                       input.contact-us__form-input.text.text--grayLowLight14.text--fw300.text--media1190-center(type="tel" placeholder="Enter please your phone" required)#phone
-                li.contact-us__form-list-items
+                li.contact-us__form-list-items.m--b20
                   label.contact-us__form-list-label.text.text--grayLowLight16.text--fw300.m--b10.text--media1190-center(for="mesage") Your message:
                   .contact-us__form-textarea-wrap
                     textarea.contact-us__form-input.contact-us__form-input--textarea.text.text--grayLowLight14.text--fw300.text--media1190-center(placeholder="Enter please your message" required)#mesage
                 li.contact-us__form-list-items.row.row--jc-c
-                  .b--w115
+                  .b--w155.b--media470-w-resize100
                     button.contact-us__button.button.button--fill-blueLowLight.button--p-tb10.text.text--white13.text--fw400.text--uppercase(type="submit") Submit
-            .contact-us__map.container
+            .contact-us__map
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10887.285873822388!2d28.86193345!3d46.984841149999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1525968567542" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
               
                     
@@ -73,7 +73,7 @@ html(class="no-js", lang="ru")
         .footer-content
           .container.row.row--jc-sb.row--ai-c
             .logo
-              a.logo__link(href="index.html")
+              a.logo__link(href="index.html" tabindex="0")
                 .logo__img-wrap
                   img.logo__img(src="%=static=%img/content/logo.svg")
             .socials.socials--footer.row.row--ai-c
